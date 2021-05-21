@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    background-color: white;
+  }
+  
+  .logo img{
+    position: absolute;
+    margin-top: 11px;
+    margin-left: 10px;
+  }
+  
+  .logout img{
+    scale: 20%;
+    position: absolute;
+    margin-left: 1390px;
+    margin-bottom: 1000px;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #003D7B;
+  }
+  
+  .topnav a {
+      float: right;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 20px 5px;
+      text-decoration: none;
+      font-size: 16px;
+      margin-right: 20px;
+  }
+  
+  .topnav b {
+      float: right;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 20px 5px;
+      text-decoration: none;
+      font-size: 16px;
+      margin-right: 5px;
+  }
+  
+  .bottomnav {
+      overflow: hidden;
+      background-color: #003D7B;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    
+    .bottomnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 20px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+  
+  .bottom_nav_text{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  .sidenav {
+    margin-top:60px;
+    height: 100%;
+    width: 15%;
+    position:fixed;
+    /* z-index: 1; */
+    top: 0;
+    /* left: 0; */
+    background-color: #343333;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    /* margin-left: 1px; */
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    /* display: block; */
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Logo at Sidebar */
+  .applicants_logo{
+  scale: 25%;
+  margin-left: 5px;
+  
+  }
+  
+  
+  .welcome{
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+    margin-top: 180px;
+    margin-left: 150px;
+  }
+  
+  .description{
+    color: white;
+    font-size: 25px;
+    margin-top: 0px;
+    margin-left: 150px;
+    padding: 8px 8px;
+  }
+  
+  .button {
+    border: none;
+    color: black;
+    padding: 15px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 10px;
+    
+  }
+  
+  .button1 {
+    background-color: #4DBDBC;
+  } 
+  
+  .wrapper{
+  margin-bottom: center;
+  margin-left: 1100px;
+  }
+  
+  .title{
+    color: black;
+    margin-left: 250px;
+    margin-top: 50px;
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  /* Styles for Table */
+  table {
+    background-color: #F1EEEE;
+    scale: 80%;
+    margin-left: 100px;
+    width:100%;
+    border-radius: 10px;
+  }
+  
+  th, td {
+    padding: 15px;
+    text-align: left;
+  }
+  #t01 tr:nth-child(even) {
+    background-color: #C4C4C4;
+  }
+  #t01 tr:nth-child(odd) {
+   background-color: #C4C4C4;
+  }
+  #t01 th {
+    background-color: #F1EEEE;
+    color: black;
+  }
+  
+  .table_title{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bolder;
+    font-size: 17px;
+  }

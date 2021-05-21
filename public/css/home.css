@@ -1,0 +1,91 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #003D7B;
+    text-decoration: white;
+  } 
+  /* .row.content {} */
+  .sidenav {
+    padding-top: 0px;
+    text-align:center;
+    /* height:100%; */
+  }
+  
+  footer {
+    background-color: #f1f1f1;
+    color: black;
+    padding: 15px;  
+  }
+  
+  /* On small screens, set height to 'auto' for sidenav and grid */
+  @media screen and (max-width: 767px) {
+    .sidenav {
+      height: auto;
+      padding: 15px;
+    }
+    .row.content {height:auto;} 
+  }
+#sidebar {
+    background: #f1f1f1;
+    position: fixed;
+    height:100%;
+    width: 40%;
+    /* right: 300px;   
+    margin-right: -280px; */
+}
+
+#sidebar ul li a {
+    color:black;
+    font-size: 1.2em;
+    display: block;
+    text-align: left;
+    text-decoration: none;  
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+.description{
+  color: white;
+  font-size: 22px;
+  margin-top: 0px;
+  /* margin-left: 50px; */
+  padding: 8px 8px;
+}
+.welcome{
+  font-weight: bold;
+  color: black;
+  font-size: 25px;
+  margin-top: 200px;
+  margin-left: 150px;
+  margin-bottom: 250px;
+}
+.col-md-10{
+    padding-left: 100px;
+    padding-right: 70px;
+}
+
+.animation{
+  position: relative;
+  animation-name: movein;
+  animation-duration: 4s;
+}
+
+@keyframes movein {
+  0%  {left:600px; top:0px;}
+  100%   {left:0px; top:0px;}
+  
+}
+
+.login_desc{
+  margin-top: 50px;
+  margin-right: 100px;
+  text-align: center;
+}
+
+/* https://codepen.io/codot/pen/BorNdz */

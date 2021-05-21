@@ -1,0 +1,99 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #003D7B;
+    text-decoration: white;
+  } 
+  .row.content {height: 450px}
+  .sidenav {
+    padding-top: 10px;
+    height:150%;
+  }
+  
+  footer {
+    background-color: #f1f1f1;
+    color: black;
+    padding: 15px;
+  }
+  
+  /* On small screens, set height to 'auto' for sidenav and grid */
+  @media screen and (max-width: 767px) {
+    .sidenav {
+      height: auto;
+      padding: 15px;
+    }
+    .row.content {height:auto;} 
+  }
+#sidebar {
+    background: #f1f1f1;
+    transition: all 0.3s; 
+}
+
+#sidebar ul li a {
+    padding: 13px;
+    color:black;
+    font-size: 1.2em;
+    display: block;
+    text-align: left;
+    text-decoration: none;   
+}
+#sidebar ul li a:hover {
+    color: white;
+    background: #555;
+    text-align: center;
+}
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    /* background: #fafafa; */
+}
+
+.horizontaltable{
+  background-color: #C4C4C4;
+  scale: 70%;
+  margin-left: 10px;
+  width:100%;
+  height:50px;
+  border-radius: 20px;
+  table-layout: auto;
+  margin-top: 100px;
+}
+
+#text {
+  font-size: 18px;
+}
+
+.tab_title{
+  text-align: center;
+}
+
+td{
+  background-color: #e6e6e6da;
+  text-indent: 50px;
+  border: 1px solid #C4C4C4;
+  text-align: center;
+}
+
+.approval_button{
+  margin-top: 150px;
+  margin-left: 220px;
+  position: absolute;
+}
+
+.approvaltable{
+  background-color: #C4C4C4;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+th.approvaltable{
+  text-align: center;
+}
+
+
