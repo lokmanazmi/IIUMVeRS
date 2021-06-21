@@ -25,6 +25,20 @@
                 <x-input id="username" class="block mt-1 w-full" type="text" name="username" :value="old('username')" required autofocus />
             </div>
 
+            <!-- type -->
+            <div>
+                <x-label for="type" :value="__('Type (Student/Lect)')" />
+
+                <x-input id="type" class="block mt-1 w-full" type="text" name="type" :value="old('type')" required autofocus />
+            </div>
+
+            <!-- phoneno -->
+            <div>
+                <x-label for="phoneno" :value="__('Phone Number')" />
+
+                <x-input id="phoneno" class="block mt-1 w-full" type="text" name="phoneno" :value="old('phoneno')" required autofocus />
+            </div>
+
             <!-- Email Address -->
             <div class="mt-4">
                 <x-label for="email" :value="__('Email')" />
@@ -39,7 +53,7 @@
                 <x-input id="password" class="block mt-1 w-full"
                                 type="password"
                                 name="password"
-                                required autocomplete="new-password" /> 
+                                required autocomplete="new-password" />
             </div>
 
             <!-- Confirm Password -->

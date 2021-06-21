@@ -28,24 +28,26 @@
                                 </div>
                                 <div class="collapse navbar-collapse" id="myNavbar">
                                     <ul class="nav navbar-nav navbar-right">
+                                    <div style="margin-top:14px; margin-right:10px; scale:120%">
                                     @if (Route::has('login'))
                                         @auth
                                             <li>
-                                                <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 underline">Dashboard</a>
+                                                <!-- <a href="{{ url('/dashboard') }}" style="color:white">Dashboard</a> -->
                                             </li>
                                         @else
-                                            <li>
-                                                <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Log in</a>
-                                            </li>
+                                           
+                                                <button ><a href="{{ route('login') }}" style="color:Black">Log in</a></button>
+                                            
 
                                             @if (Route::has('register'))
-                                            <li>
-                                                <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
-                                            </li>
+                                           
+                                                <!-- <button><a href="{{ route('register') }}" style="color:Black">Register</a></button> -->
+                                           
                                             @endif
 
                                         @endauth   
                                     @endif  
+                                    </div>
                                     </ul>
                                 </div>
                             </div>

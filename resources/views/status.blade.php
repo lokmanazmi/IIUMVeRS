@@ -12,36 +12,30 @@
 </head>
 <body>
     <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <img src="{{ asset('css/logo.png') }}">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <img src="{{ asset('css/logo.png') }}">
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                    <div style="margin-top:14px; margin-right:10px; scale:120%">
+                        <li>
+                            <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                                <a href="{{ route('logout') }}" onclick="event.preventDefault(); this.closest('form').submit();" style="color:white">Logout</a>
+                            </form>
+                        </li>
+                    </div>
+                        <!-- <li><a responsive-nav-link :href="route('logout')"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li> -->
+                    </ul>
+                </div>
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="{{ route('userprofile') }}">Profile</a>
-                    </li>
-                    <form method="POST" action="{{ route('logout') }}">
-                    @csrf
-                    <li> 
-                        <x-responsive-nav-link :href="route('logout')"  style="color:white"
-                                onclick="event.preventDefault();
-                                this.closest('form').submit();">
-                              <span class="glyphicon glyphicon-log-out">{{ __('Logout') }}</span>  
-                        </x-responsive-nav-link>
-                    </li>
-                    </form>
-                    <!-- <li><a responsive-nav-link :href="route('logout')"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li> -->
-                </ul>
-            </div>
-        </div>
-    </nav>
+        </nav>
     <div class="container-fluid text-center">
     @if(isset(Auth::user()->userID))
     <div class="alert alert-danger success-block">
@@ -61,6 +55,9 @@
                        </li>
                        <li  class="active">
                            <a href="#" data-toggle="collapse" aria-expanded="false">Status</a>
+                       </li>
+                       <li>
+                            <a href="{{ route('userprofile') }}">Profile</a>
                        </li>
                    </ul>
                </nav> 
@@ -101,9 +98,11 @@
         </div>
     </div>
 
-    <footer class="container-fluid text-center">
-        <p>Copyright 2020  |  Developed By IIUMVeRS</p>
-    </footer>    
+    <div id="footer">
+        <footer class="container-fluid text-center">
+            <p>Copyright 2020  |  Developed By IIUMVeRS</p>
+        </footer>
+    </div>     
     
 </body>
 </html>

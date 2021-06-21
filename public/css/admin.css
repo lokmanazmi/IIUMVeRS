@@ -16,6 +16,15 @@
     color: black;
     padding: 15px;
   }
+
+  #footer{
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    /* Height of the footer*/ 
+    height: 60px;
+  }
   
   /* On small screens, set height to 'auto' for sidenav and grid */
   @media screen and (max-width: 767px) {
@@ -27,7 +36,7 @@
   }
 #sidebar {
     background: #f1f1f1;
-    transition: all 0.3s; 
+    transition: all 0.3s;
 }
 
 #sidebar ul li a {
@@ -53,47 +62,48 @@ body {
     /* background: #fafafa; */
 }
 
-.horizontaltable{
-  background-color: #C4C4C4;
-  scale: 70%;
-  margin-left: 10px;
-  width:100%;
-  height:50px;
-  border-radius: 20px;
-  table-layout: auto;
-  margin-top: 100px;
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
 }
 
-#text {
-  font-size: 18px;
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
 
-.tab_title{
+#form-wrapper {
+  width: 70%;
+  margin: 0 auto;
   text-align: center;
+  margin-bottom: 100px;
+}
+#form1 {
+  width: 50%;
+  display: inline-block;
+}
+#form2 {
+  width: 50%;
+  display: inline-block;
 }
 
-td{
-  background-color: #e6e6e6da;
-  text-indent: 50px;
-  border: 1px solid #C4C4C4;
-  text-align: center;
+.approvalButton1 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 100px;
+  margin-left: 400px;
+  scale: 120%;
 }
 
-.approval_button{
-  margin-top: 150px;
-  margin-left: 220px;
-  position: absolute;
+.approvalButton2 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 50px;
+  margin-left: 405px;
+  scale: 150%;
 }
 
-.approvaltable{
-  background-color: #C4C4C4;
-  border-radius: 20px;
-  width: 100%;
-  height: 100%;
-}
-
-th.approvaltable{
-  text-align: center;
-}
 
 
